@@ -1,4 +1,6 @@
-# LaPizza
+# Projeto LaPizza
+- Site para vendas de pizza criado com o angular 12
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.3.
 
