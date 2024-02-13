@@ -1,23 +1,28 @@
-
-
-.container{
+.container {
     max-width: 1920px;
     margin-left: auto;
     margin-right: auto;
 }
 
-
-.banner img{
+.banner img {
     height: 100%;
     max-height: 600px;
-    width: 100%;
+    //width: 100%;
 }
 
-.vendidas{
-    height: 100%;
+.vendidas {
+    max-width: 2000px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
     max-height: 746px;
     margin-top: auto;
-    position: relative;
+    //position: relative;
+    background-image: url('../assets/bg.png');
+    background-repeat: no-repeat;
+    height: auto;
+    max-height: 100vh;
+    background-size: cover;
 }
 
 .vendidas img {
@@ -27,45 +32,65 @@
 .pizzas {
     max-width: 1237px;
     width: 100%;
+    margin: 0 auto;
 }
 
-
-.pizzas h2 {
+h2 {
     text-align: center;
     font-weight: bolder;
-    font-size: 2em;
+    font-size: 3em;
     margin-top: 50px;
-    position: relative;
-    // margin-left: 45%;
+    margin-bottom: 50px;
 }
-
 
 .card {
     padding: 10px;
-    background-color: #f3f7ff;
+    background-color:#FFFAF3;
     gap: 5px;
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 250px;
     margin: 5px 10px;
     text-align: center;
     justify-content: center;
-    // align-items: center;
+    align-items: center;
+    border-radius: 10px;
 }
 
 .card img {
     position: relative;
 }
 
-
-button{
-    background-color: #FFBD48;
+button {
+    background-color: #ffbd48;
     padding: 12px 40px;
     border-radius: 25px;
     font-weight: bolder;
 }
 
-
-.list-sales{
+.list-sales {
     display: flex;
+    width: fit-content;
+    margin: 0 auto 90px auto;
+    // ajusta alinhamento cards
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.title {
+    font-size: 1.8em;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.content {
+    font-size: 1.2em;
+}
+
+.price {
+    font-size: 1.9em;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }

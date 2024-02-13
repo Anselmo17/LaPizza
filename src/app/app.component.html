@@ -8,33 +8,21 @@
 
   <!-- Vendas Pizzas -->
   <section class="vendidas">
+    <section>
+      <h2>Mais Vendidas</h2>
+    </section>
 
 
     <!-- Lista das pizzas -->
     <section class="pizzas">
       <div class="list-sales">
-        <img src="../assets/bg.png">
-        <h2>Mais Vendidas</h2>
-
-        <div class="card">
-          <img src="../assets/pizza.png">
-          <h3>La Cuma</h3>
-          <p>
-            Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit.
+        <div class="card" *ngFor="let item of pizzas">
+          <img src="{{item.image}}">
+          <h3 class="title">{{item.title}}</h3>
+          <p class="content">
+            {{item.content}}
           </p>
-          <span>R$29,90</span>
-          <button type="button">COMPRAR AGORA</button>
-        </div>
-
-        <div class="card">
-          <img src="../assets/pizza.png">
-          <h3>La Cuma</h3>
-          <p>
-            Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit.
-          </p>
-          <span>R$29,90</span>
+          <span class="price">{{item.price | currency : 'R$'}}</span>
           <button type="button">COMPRAR AGORA</button>
         </div>
       </div>
