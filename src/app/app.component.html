@@ -17,7 +17,10 @@
     <section class="pizzas">
       <div class="list-sales">
         <div class="card" *ngFor="let item of pizzas">
-          <img src="{{item.image}}">
+          <div class="align-icon">
+            <img src="{{item.image}}" alt="Pizza">
+            <img src="../assets/icon-favorite.png" alt="favoritar" class="favorite">
+          </div>
           <h3 class="title">{{item.title}}</h3>
           <p class="content">
             {{item.content}}

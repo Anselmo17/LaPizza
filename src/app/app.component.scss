@@ -33,7 +33,7 @@
 .pizzas {
     max-width: 1237px;
     width: 100%;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 h2 {
@@ -51,11 +51,12 @@ h2 {
     display: flex;
     flex-direction: column;
     width: 250px;
-    margin: 5px 10px;
+    margin: 30px 10px;
     text-align: center;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    position: relative;
 }
 
 .card img {
@@ -72,7 +73,7 @@ button {
 .list-sales {
     display: flex;
     width: fit-content;
-    margin: 0 auto 90px auto;
+    margin: 0 auto -90px auto;
     // ajusta alinhamento cards
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -135,6 +136,17 @@ button {
     color: #087415;
 }
 
+.align-icon{
+    display: flex;
+    align-items: center;
+    margin-top: -70px;
+}
+
+.align-icon .favorite {
+    margin-left: 150px;
+    position: absolute;
+}
+
 /* media responsiva */
 @media (max-width: 970px) {
     .about {
@@ -146,7 +158,18 @@ button {
         width: 100%;
     }
 
+    .list-sales {
+        justify-content: center;
+        margin: auto;
+    }
+
     .img-about p {
+        padding: 4px 10px;
+        text-align: justify;
         font-size: 1.2em;
+    }
+
+    .list-sales {
+        margin: 0 auto -116px auto;
     }
 }
