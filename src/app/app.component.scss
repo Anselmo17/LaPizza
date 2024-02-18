@@ -106,6 +106,12 @@ button {
     width: auto;
 }
 
+.img-about img {
+    height: auto;
+    max-height: 600px;
+}
+
+
 .img-about p {
     padding: 30px;
     text-align: justify;
@@ -114,7 +120,7 @@ button {
 
 .btn-about {
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 35px;
 }
 
 .letterI {
@@ -127,4 +133,20 @@ button {
 
 .letterZZ {
     color: #087415;
+}
+
+/* media responsiva */
+@media (max-width: 970px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-about img {
+        width: 100%;
+    }
+
+    .img-about p {
+        font-size: 1.2em;
+    }
 }
